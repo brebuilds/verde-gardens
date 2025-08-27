@@ -3,10 +3,10 @@ export const Header = () => {
       <div className="verde-container">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
           <div className="text-left" style={{ paddingLeft: '20px' }}>
-            <h1 className="font-serif text-3xl lg:text-4xl font-medium mb-2 tracking-tight" style={{ color: 'rgba(241, 240, 232, 1)' }}>
+            <h1 className="font-serif text-3xl lg:text-4xl font-medium mb-2 tracking-tight" style={{ color: 'rgba(241, 240, 232, 1)', paddingLeft: '20px', font: '300 36px/30px "Crimson Pro", "Playfair display", serif' }}>
               Verde Gardens Community
             </h1>
-            <p className="font-sans text-base font-light text-right" style={{ color: 'rgb(241, 240, 232)', paddingLeft: '20px' }}>
+            <p className="font-sans text-base font-light text-right" style={{ color: 'rgb(241, 240, 232)', paddingLeft: '20px', marginRight: 'auto', lineHeight: '14px' }}>
               Thoughtfully Curated Student Living for SEU Arizona
             </p>
           </div>
