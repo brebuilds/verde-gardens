@@ -21,7 +21,7 @@ export const Navigation = ({ activeSection }: NavigationProps) => {
   ];
 
   return (
-    <nav className="bg-primary sticky top-0 z-50 py-4">
+    <nav className="bg-verde-navigation sticky top-0 z-50 py-4">
       <div className="verde-container">
         <ul className="flex flex-wrap justify-center gap-2 lg:gap-4">
           {navItems.map((item) => (

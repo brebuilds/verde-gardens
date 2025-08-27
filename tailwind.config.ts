@@ -60,7 +60,8 @@ export default {
 				verde: {
 					primary: 'hsl(var(--primary))',
 					light: 'hsl(var(--primary-light))',
-					muted: 'hsl(var(--muted))'
+					muted: 'hsl(var(--muted))',
+					navigation: 'hsl(var(--navigation-bg))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

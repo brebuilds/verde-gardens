@@ -2,59 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Verde Gardens Community Design System - Green/Natural Theme */
+/* Modern Boho Neutral Design System */
 
 @layer base {
   :root {
     /* Brand Colors */
-    --background: 0 0% 100%;
-    --foreground: 125 33% 17%;
+    --background: 250 9% 83%;
+    --foreground: 0 0% 23%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 125 33% 17%;
+    --card: 250 9% 85%;
+    --card-foreground: 0 0% 23%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 125 33% 17%;
+    --popover: 250 9% 85%;
+    --popover-foreground: 0 0% 23%;
 
-    /* Verde Primary Green */
-    --primary: 125 33% 17%;
+    /* Sage Green Primary */
+    --primary: 90 15% 67%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 125 25% 40%;
+    --primary-light: 90 15% 75%;
 
-    /* Verde Secondary */
-    --secondary: 38 29% 94%;
-    --secondary-foreground: 125 33% 17%;
+    /* Tan Secondary */
+    --secondary: 15 8% 73%;
+    --secondary-foreground: 0 0% 23%;
 
-    /* Verde Accent Orange */
-    --accent-orange: 20 100% 60%;
+    /* Charcoal Accent */
+    --accent-orange: 0 0% 23%;
     --accent-orange-foreground: 0 0% 100%;
 
-    /* Verde Muted Green */
-    --muted: 120 20% 96%;
-    --muted-foreground: 125 15% 45%;
+    /* Muted Tan */
+    --muted: 15 8% 73%;
+    --muted-foreground: 90 6% 37%;
 
-    --accent: 120 20% 96%;
-    --accent-foreground: 125 33% 17%;
+    --accent: 15 8% 73%;
+    --accent-foreground: 0 0% 23%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 120 15% 89%;
-    --input: 120 15% 89%;
-    --ring: 125 25% 40%;
+    --border: 15 8% 70%;
+    --input: 15 8% 70%;
+    --ring: 90 15% 67%;
+
+    /* Navigation & Footer Darker Sage */
+    --navigation-bg: 90 12% 46%;
 
     --radius: 0.75rem;
 
-    /* Verde Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(125 33% 17% / 0.9), hsl(125 25% 40% / 0.85));
-    --gradient-header: linear-gradient(135deg, hsl(38 29% 94%), hsl(38 20% 90%));
-    --gradient-cta: linear-gradient(135deg, hsl(125 30% 60%), hsl(125 25% 45%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(120 20% 98%));
+    /* Boho Neutral Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(90 12% 46% / 0.9), hsl(90 6% 37% / 0.85));
+    --gradient-header: linear-gradient(135deg, hsl(15 8% 73%), hsl(15 6% 68%));
+    --gradient-cta: linear-gradient(135deg, hsl(90 15% 67%), hsl(90 12% 46%));
+    --gradient-card: linear-gradient(145deg, hsl(250 9% 85%), hsl(15 8% 73%));
 
-    /* Verde Shadows */
-    --shadow-card: 0 4px 20px hsl(125 33% 17% / 0.08);
-    --shadow-elevated: 0 8px 30px hsl(125 33% 17% / 0.12);
-    --shadow-orange: 0 4px 20px hsl(20 100% 60% / 0.25);
+    /* Boho Neutral Shadows */
+    --shadow-card: 0 4px 20px hsl(0 0% 23% / 0.08);
+    --shadow-elevated: 0 8px 30px hsl(0 0% 23% / 0.12);
+    --shadow-orange: 0 4px 20px hsl(0 0% 23% / 0.25);
 
     /* Verde Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,9 +131,9 @@
 }
 
 @layer components {
-  /* Verde Component Styles */
+  /* Boho Neutral Component Styles */
   .verde-card {
-    @apply bg-gradient-to-br from-white to-muted rounded-xl shadow-[var(--shadow-card)] border border-border/50 transition-[var(--transition-smooth)] hover:shadow-[var(--shadow-elevated)] hover:-translate-y-1;
+    @apply bg-gradient-to-br from-card to-muted rounded-xl shadow-[var(--shadow-card)] border border-border/50 transition-[var(--transition-smooth)] hover:shadow-[var(--shadow-elevated)] hover:-translate-y-1;
   }
 
   .verde-hero-bg {
@@ -149,7 +152,7 @@
   }
 
   .verde-button {
-    @apply inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl transition-[var(--transition-bounce)] shadow-[var(--shadow-orange)] hover:-translate-y-1 hover:shadow-[0_8px_30px_hsl(20_100%_60%_/_0.4)];
+    @apply inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl transition-[var(--transition-bounce)] shadow-[var(--shadow-orange)] hover:-translate-y-1 hover:shadow-[0_8px_30px_hsl(0_0%_23%_/_0.4)];
     background: hsl(var(--accent-orange));
     color: hsl(var(--accent-orange-foreground));
   }
