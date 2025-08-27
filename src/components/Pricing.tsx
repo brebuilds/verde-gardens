@@ -47,7 +47,7 @@ export const Pricing = () => {
           </div>
 
           <div className="text-center p-8 border rounded-xl transition-all transform scale-105" style={{ backgroundColor: 'rgba(218, 217, 211, 1)', borderColor: 'rgba(185, 175, 172, 0.5)', boxShadow: 'rgb(255, 255, 255) 0px 0px 0px 0px, rgb(251, 146, 60) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px' }}>
-            <h3 className="font-serif text-2xl lg:text-3xl font-medium text-primary mb-4">
+            <h3 className="font-serif text-2xl lg:text-3xl font-medium mb-4" style={{ color: 'rgba(122, 134, 106, 1)' }}>
               Shared Haven
             </h3>
             <div className="text-5xl font-bold text-accent-orange mb-6">
