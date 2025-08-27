@@ -11,17 +11,17 @@ export const Pricing = () => {
   };
 
   return (
-    <section id="pricing" className="verde-section">
+    <section id="pricing" className="verde-section" style={{ backgroundColor: 'rgba(171, 181, 162, 1)' }}>
       <div className="verde-container">
-        <h2 className="font-serif text-4xl lg:text-5xl font-medium text-center text-primary mb-6 tracking-tight">
+        <h2 className="font-serif text-4xl lg:text-5xl font-medium text-center mb-6 tracking-tight" style={{ color: 'rgba(247, 245, 241, 1)' }}>
           Investment in Your Journey
         </h2>
-        <p className="font-sans text-lg text-center text-muted-foreground mb-12 font-light">
+        <p className="font-sans text-lg text-center mb-12 font-light" style={{ color: 'rgba(58, 58, 58, 1)' }}>
           All-inclusive living with utilities, WiFi, and EOS gym membership thoughtfully included
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-          <div className="verde-pricing-card">
+          <div className="text-center p-8 border rounded-xl transition-all" style={{ backgroundColor: 'rgba(218, 217, 211, 1)', borderColor: 'rgba(185, 175, 172, 0.5)' }}>
             <h3 className="font-serif text-2xl lg:text-3xl font-medium text-primary mb-4">
               Private Sanctuary
             </h3>
@@ -46,7 +46,7 @@ export const Pricing = () => {
             </ul>
           </div>
 
-          <div className="verde-pricing-card featured">
+          <div className="text-center p-8 border rounded-xl transition-all transform scale-105" style={{ backgroundColor: 'rgba(218, 217, 211, 1)', borderColor: 'rgba(185, 175, 172, 0.5)', boxShadow: 'rgb(255, 255, 255) 0px 0px 0px 0px, rgb(251, 146, 60) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px' }}>
             <h3 className="font-serif text-2xl lg:text-3xl font-medium text-primary mb-4">
               Shared Haven
             </h3>
@@ -74,7 +74,7 @@ export const Pricing = () => {
           </div>
         </div>
 
-        <div className="verde-cta-bg text-white rounded-2xl p-8 lg:p-12 text-center">
+        <div className="text-white rounded-2xl p-8 lg:p-12 text-center" style={{ backgroundColor: 'rgba(122, 134, 106, 1)' }}>
           <h2 className="font-serif text-3xl lg:text-4xl font-medium mb-4">Begin Your Journey</h2>
           <p className="font-sans text-lg mb-8 max-w-3xl mx-auto font-light opacity-95">
             Reserve your place in the Verde Gardens Community—where your academic 
