@@ -1,15 +1,19 @@
 export const About = () => {
   return (
-    <section id="about" className="verde-section bg-muted">
+    <section id="about" className="verde-section" style={{ backgroundColor: 'rgba(236, 234, 227, 1)' }}>
       <div className="verde-container">
-        <h2 className="font-serif text-4xl lg:text-5xl font-medium text-center text-primary mb-12 tracking-tight">
-          About Verde Gardens Community
+        <h2 className="font-serif text-4xl lg:text-5xl font-medium text-center mb-12 tracking-tight">
+          <p>
+            <span style={{ color: 'rgb(117, 131, 103)' }}>
+              About Verde Gardens Community
+            </span>
+          </p>
         </h2>
         
-        <div className="verde-card p-8 lg:p-12">
+        <div className="p-8 lg:p-12 border rounded-xl transition-all" style={{ backgroundColor: 'rgba(218, 217, 211, 1)', borderColor: 'rgba(185, 175, 172, 0.5)' }}>
           <div className="verde-grid-2">
             <div className="space-y-6">
-              <h3 className="font-serif text-2xl lg:text-3xl font-medium text-primary-light mb-6">
+              <h3 className="font-serif text-2xl lg:text-3xl font-medium mb-6" style={{ color: 'rgba(122, 134, 106, 1)' }}>
                 Perfectly Placed for SEU Students
               </h3>
               <p className="font-sans text-base text-muted-foreground leading-relaxed mb-6 font-light">
