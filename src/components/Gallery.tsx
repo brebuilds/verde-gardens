@@ -1,40 +1,38 @@
-import kitchenImg from "@/assets/kitchen.jpg";
-import livingRoomImg from "@/assets/living-room.jpg";
-import bedroomPrivateImg from "@/assets/bedroom-private.jpg";
-import bedroomSharedImg from "@/assets/bedroom-shared.jpg";
-import bathroomImg from "@/assets/bathroom.jpg";
-import heroImg from "@/assets/hero-bg.jpg";
+const SUPABASE_URL = "https://narqqdnaagjjjddaktun.supabase.co";
 
 export const Gallery = () => {
+  const getImageUrl = (filename: string) => 
+    `${SUPABASE_URL}/storage/v1/object/public/Images/${filename}`;
+
   const galleryItems = [
     {
-      image: kitchenImg,
+      image: getImageUrl("VG - Kitchen Close Up.png"),
       title: "Fully Equipped Kitchen",
       description: "Modern appliances and island seating",
       large: true,
     },
     {
-      image: livingRoomImg,
+      image: getImageUrl("VG - Living Area - Wide.png"),
       title: "Living Room",
       description: "Comfortable shared space",
     },
     {
-      image: bedroomPrivateImg,
+      image: getImageUrl("VG - Single Room.png"),
       title: "Private Bedroom",
       description: "Your personal study space",
     },
     {
-      image: bathroomImg,
+      image: getImageUrl("VG - Bathroom.png"),
       title: "Full Bathroom",
       description: "Clean, modern fixtures",
     },
     {
-      image: bedroomSharedImg,
+      image: getImageUrl("VG - Shared from Right.png"),
       title: "Shared Room Option",
       description: "Comfortable twin bed setup",
     },
     {
-      image: heroImg,
+      image: getImageUrl("VG - Outdoors 2.png"),
       title: "Verde Gardens Community",
       description: "Across from SEU Arizona campus",
       large: true,
