@@ -2,41 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Verde Gardens Community Design System - Green/Natural Theme */
 
 @layer base {
   :root {
+    /* Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 125 33% 17%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 125 33% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 125 33% 17%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Verde Primary Green */
+    --primary: 125 33% 17%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 125 25% 40%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Verde Secondary */
+    --secondary: 38 29% 94%;
+    --secondary-foreground: 125 33% 17%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Verde Accent Orange */
+    --accent-orange: 20 100% 60%;
+    --accent-orange-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Verde Muted Green */
+    --muted: 120 20% 96%;
+    --muted-foreground: 125 15% 45%;
+
+    --accent: 120 20% 96%;
+    --accent-foreground: 125 33% 17%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 120 15% 89%;
+    --input: 120 15% 89%;
+    --ring: 125 25% 40%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Verde Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(125 33% 17% / 0.9), hsl(125 25% 40% / 0.85));
+    --gradient-header: linear-gradient(135deg, hsl(38 29% 94%), hsl(38 20% 90%));
+    --gradient-cta: linear-gradient(135deg, hsl(125 30% 60%), hsl(125 25% 45%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(120 20% 98%));
+
+    /* Verde Shadows */
+    --shadow-card: 0 4px 20px hsl(125 33% 17% / 0.08);
+    --shadow-elevated: 0 8px 30px hsl(125 33% 17% / 0.12);
+    --shadow-orange: 0 4px 20px hsl(20 100% 60% / 0.25);
+
+    /* Verde Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +122,131 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    scroll-behavior: smooth;
   }
+}
+
+@layer components {
+  /* Verde Component Styles */
+  .verde-card {
+    @apply bg-gradient-to-br from-white to-muted rounded-xl shadow-[var(--shadow-card)] border border-border/50 transition-[var(--transition-smooth)] hover:shadow-[var(--shadow-elevated)] hover:-translate-y-1;
+  }
+
+  .verde-hero-bg {
+    background: var(--gradient-hero), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="none" width="1200" height="600"/><polygon fill="rgba(255,255,255,0.03)" points="0,600 400,200 800,400 1200,100 1200,600"/><polygon fill="rgba(255,255,255,0.02)" points="0,600 300,300 600,500 900,200 1200,300 1200,600"/></svg>');
+    background-size: cover, cover;
+    background-position: center, center;
+    background-attachment: fixed, fixed;
+  }
+
+  .verde-header-bg {
+    background: var(--gradient-header);
+  }
+
+  .verde-cta-bg {
+    background: var(--gradient-cta);
+  }
+
+  .verde-button {
+    @apply inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl transition-[var(--transition-bounce)] shadow-[var(--shadow-orange)] hover:-translate-y-1 hover:shadow-[0_8px_30px_hsl(20_100%_60%_/_0.4)];
+    background: hsl(var(--accent-orange));
+    color: hsl(var(--accent-orange-foreground));
+  }
+
+  .verde-button:hover {
+    background: hsl(var(--accent-orange) / 0.9);
+  }
+
+  .verde-button-outline {
+    @apply inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl border-2 transition-[var(--transition-smooth)];
+    border-color: hsl(var(--accent-orange-foreground));
+    color: hsl(var(--accent-orange-foreground));
+    background: transparent;
+  }
+
+  .verde-button-outline:hover {
+    background: hsl(var(--accent-orange-foreground));
+    color: hsl(var(--primary));
+  }
+
+  .verde-nav-link {
+    @apply relative px-4 py-2 font-medium text-white/90 rounded-lg transition-[var(--transition-smooth)] hover:text-white hover:bg-white/10;
+  }
+
+  .verde-nav-link.active {
+    @apply text-white bg-white/20;
+  }
+
+  .verde-section {
+    @apply py-16 px-4;
+  }
+
+  .verde-container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .verde-grid-2 {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-8 items-center;
+  }
+
+  .verde-grid-3 {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6;
+  }
+
+  .verde-pricing-card {
+    @apply verde-card p-8 text-center relative overflow-hidden;
+  }
+
+  .verde-pricing-card.featured {
+    @apply ring-2 ring-orange-400 scale-105 relative;
+  }
+
+  .verde-pricing-card.featured::before {
+    content: 'Most Popular';
+    @apply absolute -top-1 -right-8 bg-orange-400 text-white px-8 py-1 text-sm font-semibold transform rotate-12;
+  }
+
+  .verde-amenity-card {
+    @apply verde-card p-6 text-center hover:scale-105;
+  }
+
+  .verde-gallery-item {
+    @apply relative rounded-xl overflow-hidden shadow-lg transition-[var(--transition-smooth)] hover:-translate-y-2 hover:shadow-xl;
+  }
+
+  .verde-gallery-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-[var(--transition-smooth)] hover:opacity-100 flex items-end p-6;
+  }
+
+  .verde-detail-card {
+    @apply verde-card p-6 text-center;
+  }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .stagger-animation > * {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+  .stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
+  .stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
+  .stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
+  .stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
+  .stagger-animation > *:nth-child(6) { animation-delay: 0.6s; }
 }
