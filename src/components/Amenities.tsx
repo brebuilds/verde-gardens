@@ -52,7 +52,7 @@ export const Amenities = () => {
           {amenities.map((amenity, index) => (
             <div key={index} className="verde-amenity-card">
               <div className="text-5xl mb-4">{amenity.icon}</div>
-              <h3 className="font-serif text-xl font-medium text-primary mb-3">
+              <h3 className="font-serif text-xl font-medium mb-3" style={{ color: 'rgba(122, 134, 106, 1)' }}>
                 {amenity.title}
               </h3>
               <p className="font-sans text-muted-foreground leading-relaxed font-light">
