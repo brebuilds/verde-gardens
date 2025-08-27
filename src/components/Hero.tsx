@@ -1,4 +1,4 @@
-import heroBackground from "@/assets/hero-bg.jpg";
+const heroBackground = "/lovable-uploads/3a6b8b51-cab0-417a-a3d7-a1783cc9198b.png";
 
 export const Hero = () => {
   const scrollToPricing = () => {
@@ -13,7 +13,7 @@ export const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center text-white"
       style={{
-        background: `linear-gradient(rgba(44, 85, 48, 0.85), rgba(44, 85, 48, 0.85)), url(${heroBackground})`,
+        background: `linear-gradient(rgba(139, 125, 107, 0.85), rgba(139, 125, 107, 0.85)), url(${heroBackground})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
