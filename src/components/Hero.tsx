@@ -24,13 +24,6 @@ export const Hero = () => {
           className="w-full h-full"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 600"
-          style={{
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F1bf7e880fbdc473e9f1fe68045a1e2c7%2F8b5f4aa4b82e4e86a3b36a879cdb6dcb)',
-            color: 'rgba(241, 240, 232, 1)'
-          }}
         >
           <polygon
             fill="rgba(255,255,255,0.03)"
@@ -45,14 +38,7 @@ export const Hero = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 600"
           className="w-full h-full"
-          style={{
-            opacity: '0.09',
-            boxShadow: '1px 1px 3px 0px rgba(0, 0, 0, 1)',
-            backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F1bf7e880fbdc473e9f1fe68045a1e2c7%2F8b5f4aa4b82e4e86a3b36a879cdb6dcb)',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-            backgroundSize: 'cover'
-          }}
+          style={{ opacity: '0.09' }}
         >
           <polygon
             fill="rgba(255,255,255,0.03)"
