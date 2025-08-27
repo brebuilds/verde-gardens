@@ -37,13 +37,12 @@ export const Hero = () => {
       </div>
 
       <div className="verde-container text-center relative z-10 px-4">
-        <h2 className="text-4xl lg:text-6xl font-bold mb-6 animate-fade-in-up">
-          Your Home Away From Home
+        <h2 className="font-serif text-4xl lg:text-6xl font-medium mb-6 animate-fade-in-up tracking-tight">
+          Your Sanctuary Away From Home
         </h2>
-        <p className="text-xl lg:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up">
-          Fully furnished 3-bedroom, 2-bathroom apartments designed specifically
-          for SEU Arizona college students. Located directly across from the
-          church campus for ultimate convenience.
+        <p className="font-sans text-lg lg:text-xl mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up opacity-95 font-light">
+          Thoughtfully curated 3-bedroom sanctuaries designed with intention for SEU Arizona students. 
+          Nestled directly across from campus, where community meets comfort in perfect harmony.
         </p>
         <button
           onClick={scrollToPricing}

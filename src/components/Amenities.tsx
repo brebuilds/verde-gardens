@@ -41,21 +41,21 @@ export const Amenities = () => {
   return (
     <section id="amenities" className="verde-section bg-muted">
       <div className="verde-container">
-        <h2 className="text-4xl lg:text-5xl font-bold text-center text-primary mb-6">
-          Included Amenities
+        <h2 className="font-serif text-4xl lg:text-5xl font-medium text-center text-primary mb-6 tracking-tight">
+          Thoughtful Amenities
         </h2>
-        <p className="text-xl text-center text-muted-foreground mb-12">
-          Everything you need for comfortable student living is included in your rent.
+        <p className="font-sans text-lg text-center text-muted-foreground mb-12 font-light">
+          Every comfort you need for intentional living, seamlessly woven into your monthly investment
         </p>
 
         <div className="verde-grid-3 stagger-animation">
           {amenities.map((amenity, index) => (
             <div key={index} className="verde-amenity-card">
               <div className="text-5xl mb-4">{amenity.icon}</div>
-              <h3 className="text-xl font-bold text-primary mb-3">
+              <h3 className="font-serif text-xl font-medium text-primary mb-3">
                 {amenity.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="font-sans text-muted-foreground leading-relaxed font-light">
                 {amenity.description}
               </p>
             </div>

@@ -44,11 +44,11 @@ export const Gallery = () => {
   return (
     <section id="gallery" className="verde-section">
       <div className="verde-container">
-        <h2 className="text-4xl lg:text-5xl font-bold text-center text-primary mb-6">
-          Photo Gallery
+        <h2 className="font-serif text-4xl lg:text-5xl font-medium text-center text-primary mb-6 tracking-tight">
+          Curated Spaces
         </h2>
-        <p className="text-xl text-center text-muted-foreground mb-12">
-          Take a look inside our fully furnished apartments and community spaces.
+        <p className="font-sans text-lg text-center text-muted-foreground mb-12 font-light">
+          Step inside our thoughtfully designed residences and discover where comfort meets intention
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -66,8 +66,8 @@ export const Gallery = () => {
               />
               <div className="verde-gallery-overlay group-hover:opacity-100">
                 <div className="text-white">
-                  <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                  <p className="text-white/90">{item.description}</p>
+                  <h4 className="font-serif text-xl font-medium mb-2">{item.title}</h4>
+                  <p className="font-sans text-white/90 font-light">{item.description}</p>
                 </div>
               </div>
             </div>
