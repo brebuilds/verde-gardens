@@ -13,7 +13,7 @@ export const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center text-white"
       style={{
-        background: `linear-gradient(rgba(139, 125, 107, 0.85), rgba(139, 125, 107, 0.85)), url(${heroBackground})`,
+        background: `linear-gradient(rgba(139, 125, 107, 0.6), rgba(139, 125, 107, 0.6)), url(${heroBackground})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
