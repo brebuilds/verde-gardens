@@ -19,7 +19,7 @@ export const Hero = () => {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0" style={{ opacity: 0.43 }}>
         <svg
           className="w-full h-full"
           xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ export const Hero = () => {
         <h2 className="font-serif text-4xl lg:text-6xl mb-6 animate-fade-in-up tracking-tight" style={{ color: 'rgba(241, 240, 232, 1)', fontWeight: '200' }}>
           Your Sanctuary Away From Home
         </h2>
-        <p className="font-sans text-lg lg:text-xl mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up opacity-95" style={{ fontWeight: '200', color: 'rgba(241, 240, 232, 1)' }}>
+        <p className="font-sans text-lg lg:text-xl mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up opacity-95" style={{ fontWeight: '200', color: 'rgba(247, 245, 241, 1)' }}>
           Thoughtfully curated 3-bedroom sanctuaries designed with intention for SEU Arizona students.
           Nestled directly across from campus, where community meets comfort in perfect harmony.
         </p>
