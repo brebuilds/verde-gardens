@@ -39,9 +39,9 @@ export const Amenities = () => {
   ];
 
   return (
-    <section id="amenities" className="verde-section bg-muted">
+    <section id="amenities" className="verde-section" style={{ backgroundColor: 'rgba(218, 217, 211, 1)' }}>
       <div className="verde-container">
-        <h2 className="font-serif text-4xl lg:text-5xl font-medium text-center text-primary mb-6 tracking-tight">
+        <h2 className="font-serif text-4xl lg:text-5xl font-medium text-center mb-6 tracking-tight" style={{ color: 'rgba(122, 134, 106, 1)' }}>
           Thoughtful Amenities
         </h2>
         <p className="font-sans text-lg text-center text-muted-foreground mb-12 font-light">
