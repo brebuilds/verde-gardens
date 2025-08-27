@@ -1,6 +1,5 @@
 export const Header = () => {
-  return (
-    <header className="verde-header-bg py-4 shadow-lg">
+  return <header className="verde-header-bg py-4 shadow-lg bg-zinc-300">
       <div className="verde-container">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
           <div className="text-center lg:text-left">
@@ -21,6 +20,5 @@ export const Header = () => {
           </div>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
