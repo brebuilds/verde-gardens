@@ -22,7 +22,7 @@ export const Pricing = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
           <div className="text-center p-8 border rounded-xl transition-all" style={{ backgroundColor: 'rgba(218, 217, 211, 1)', borderColor: 'rgba(185, 175, 172, 0.5)' }}>
-            <h3 className="font-serif text-2xl lg:text-3xl font-medium text-primary mb-4">
+            <h3 className="font-serif text-2xl lg:text-3xl font-medium mb-4" style={{ color: 'rgba(122, 134, 106, 1)' }}>
               Private Sanctuary
             </h3>
             <div className="text-5xl font-bold text-accent-orange mb-6">
