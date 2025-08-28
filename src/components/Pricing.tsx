@@ -68,9 +68,7 @@ export const Pricing = () => {
           </div>
         </div>
 
-        <div className="text-white rounded-2xl p-8 lg:p-12 text-center" style={{
-        backgroundColor: 'rgba(122, 134, 106, 1)'
-      }}>
+        <div className="bg-primary text-primary-foreground rounded-2xl p-8 lg:p-12 text-center">
           <h2 className="font-serif text-3xl lg:text-4xl font-medium mb-4">Begin Your Journey</h2>
           <p className="font-sans text-lg mb-8 max-w-3xl mx-auto font-light opacity-95">
             Reserve your place in the Verde Gardens Community—where your academic 
