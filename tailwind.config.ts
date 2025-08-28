@@ -19,8 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'serif': ['Crimson Pro', 'Playfair display', 'serif'],
-				'sans': ['Poppins', 'system-ui', '-apple-system', 'sans-serif'],
+				'serif': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+				'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

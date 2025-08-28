@@ -24,13 +24,13 @@ export const PropertyDetails = () => {
         
 
         <div className="verde-card p-8 lg:p-12 mb-12">
-          <h3 className="font-serif text-2xl lg:text-3xl font-medium mb-8 text-center text-[#7a866a]">
+          <h3 className="font-sans text-2xl lg:text-3xl font-semibold mb-8 text-center text-primary">
             Residence Specifications
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {details.map((detail, index) => <div key={index} className="verde-detail-card">
                 <div className="text-4xl mb-4">{detail.icon}</div>
-                <h4 className="font-serif text-xl font-medium mb-3 text-[#7a866a]">
+                <h4 className="font-sans text-xl font-semibold mb-3 text-primary">
                   {detail.title}
                 </h4>
                 <p className="font-sans text-muted-foreground font-light">{detail.description}</p>
@@ -39,7 +39,7 @@ export const PropertyDetails = () => {
         </div>
 
         <div className="verde-card p-8 lg:p-12 text-center">
-          <h3 className="font-serif text-2xl lg:text-3xl font-medium mb-4 text-[#7a866a]">
+          <h3 className="font-sans text-2xl lg:text-3xl font-semibold mb-4 text-primary">
             Discover More
           </h3>
           <p className="font-sans text-lg text-muted-foreground mb-8 max-w-3xl mx-auto font-extralight">

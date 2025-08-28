@@ -31,7 +31,6 @@ export const Navigation = ({ activeSection }: NavigationProps) => {
                 className={`verde-nav-link ${
                   activeSection === item.id ? "active" : ""
                 }`}
-                style={{ color: 'rgba(241, 240, 232, 1)', fontWeight: '200' }}
               >
                 {item.label}
               </button>

@@ -30,23 +30,15 @@ export const Hero = () => {
       </div>
 
       <div className="verde-container text-center relative z-10 px-4">
-        <h2 className="font-serif text-4xl lg:text-6xl mb-6 animate-fade-in-up tracking-tight" style={{
-        color: 'rgba(241, 240, 232, 1)',
-        fontWeight: '200'
-      }}>
-          Your Sanctuary Away From Home
+        <h2 className="font-sans text-4xl lg:text-6xl mb-6 animate-fade-in-up tracking-tight text-white font-bold">
+          Your Success Starts Here
         </h2>
-        <p style={{
-        fontWeight: '200',
-        color: 'rgba(247, 245, 241, 1)'
-      }} className="font-sans text-lg lg:text-xl mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up opacity-95 font-thin">
-          Thoughtfully curated 3-bedroom sanctuaries designed with intention for SEU Arizona students.
-          Nestled directly across from campus, where community meets comfort in perfect harmony.
+        <p className="font-sans text-lg lg:text-xl mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in-up text-white/95 font-medium">
+          Premium student housing designed specifically for SEU Arizona students.
+          Located directly across from campus for your convenience and academic success.
         </p>
-        <button onClick={scrollToPricing} className="verde-button animate-fade-in-up" style={{
-        fontWeight: '300'
-      }}>
-          View Pricing & Apply
+        <button onClick={scrollToPricing} className="verde-button animate-fade-in-up">
+          Apply Now
         </button>
       </div>
     </section>;

@@ -1,21 +1,21 @@
 export const Header = () => {
-  return <header className="py-4 shadow-lg" style={{ backgroundColor: '#758367' }}>
+  return <header className="py-6 shadow-lg bg-primary">
       <div className="verde-container">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
-          <div className="text-left" style={{ paddingLeft: '20px' }}>
-            <h1 className="font-serif text-3xl lg:text-4xl font-medium mb-2 tracking-tight" style={{ color: 'rgba(241, 240, 232, 1)', paddingLeft: '20px', font: '300 36px/30px "Crimson Pro", "Playfair display", serif' }}>
+          <div className="text-left px-5">
+            <h1 className="font-sans text-3xl lg:text-4xl font-bold mb-2 tracking-tight text-primary-foreground">
               Verde Gardens Community
             </h1>
-            <p className="font-sans text-base font-light text-right" style={{ color: 'rgb(241, 240, 232)', paddingLeft: '20px', marginRight: 'auto', lineHeight: '14px' }}>
-              Thoughtfully Curated Student Living for SEU Arizona
+            <p className="font-sans text-base font-medium text-primary-foreground opacity-90">
+              Official Student Housing Partner for SEU Arizona
             </p>
           </div>
-          <div className="text-right" style={{ paddingRight: '20px' }}>
-            <p className="font-sans font-light mb-1 text-sm" style={{ color: 'rgba(241, 240, 232, 1)' }}>
+          <div className="text-right px-5">
+            <p className="font-sans font-medium mb-1 text-sm text-primary-foreground">
               13230 N 22nd St, Phoenix, AZ 85022
             </p>
-            <p className="font-sans font-light text-sm" style={{ color: 'rgba(241, 240, 232, 1)' }}>
-              &nbsp;18 Thoughtfully Curated Residences Available
+            <p className="font-sans font-medium text-sm text-primary-foreground">
+              18 Premium Residences Available
             </p>
           </div>
         </div>
