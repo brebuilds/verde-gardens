@@ -21,9 +21,9 @@ export const Hero = () => {
           <polygon fill="rgba(255,255,255,0.03)" points="0,600 400,200 800,400 1200,100 1200,600" />
           <polygon fill="rgba(0,0,0,0.02)" points="0,600 300,300 600,500 900,200 1200,300 1200,600" />
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" className="w-full h-full" style={{
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" style={{
         opacity: '0.09'
-      }}>
+      }} className="w-full h-full">
           <polygon fill="rgba(255,255,255,0.03)" points="0,600 400,200 800,400 1200,100 1200,600" />
           <polygon fill="rgba(255,255,255,0.02)" points="0,600 300,300 600,500 900,200 1200,300 1200,600" />
         </svg>
