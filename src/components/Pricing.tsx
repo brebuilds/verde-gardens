@@ -10,58 +10,41 @@ export const Pricing = () => {
       });
     }
   };
-  return <section id="pricing" style={{
-    backgroundColor: 'rgba(171, 181, 162, 1)'
-  }} className="verde-section bg-zinc-300">
+  return <section id="pricing" className="verde-section bg-muted">
       <div className="verde-container">
-        <h2 style={{
-        color: 'rgba(247, 245, 241, 1)'
-      }} className="font-serif text-4xl lg:text-5xl font-medium text-center mb-6 tracking-tight text-gray-900">
+        <h2 className="font-serif text-4xl lg:text-5xl font-medium text-center mb-6 tracking-tight text-primary">
           Investment in Your Journey
         </h2>
-        <p className="font-sans text-lg text-center mb-12 font-light" style={{
-        color: 'rgba(58, 58, 58, 1)'
-      }}>
+        <p className="font-sans text-lg text-center mb-12 font-light text-muted-foreground">
           All-inclusive living with utilities, WiFi, and EOS gym membership thoughtfully included
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-          <div style={{
-          backgroundColor: 'rgba(218, 217, 211, 1)',
-          borderColor: 'rgba(185, 175, 172, 0.5)'
-        }} className="text-center p-8 border rounded-xl transition-all bg-gray-200">
-            <h3 style={{
-            color: 'rgba(122, 134, 106, 1)'
-          }} className="font-serif text-2xl lg:text-3xl mb-4 font-medium text-zinc-900">
+          <div className="bg-card border border-border text-center p-8 rounded-xl transition-all">
+            <h3 className="font-serif text-2xl lg:text-3xl mb-4 font-medium text-primary">
               Private Sanctuary
             </h3>
-            <div className="text-5xl font-bold text-accent-orange mb-6">
+            <div className="text-5xl font-bold text-primary mb-6">
               $800<span className="text-xl text-muted-foreground font-normal">/month</span>
             </div>
             <ul className="space-y-3 text-left">
               {["Your own private bedroom", "Shared common areas & bathrooms", "All utilities included", "High-speed WiFi", "EOS Gym membership", "Fully furnished", "Prime location near SEU"].map((feature, index) => <li key={index} className="flex items-center text-muted-foreground">
-                  <span className="text-green-500 font-bold mr-3">✓</span>
+                  <span className="text-primary font-bold mr-3">✓</span>
                   {feature}
                 </li>)}
             </ul>
           </div>
 
-          <div style={{
-          backgroundColor: 'rgba(218, 217, 211, 1)',
-          borderColor: 'rgba(185, 175, 172, 0.5)',
-          boxShadow: 'rgb(255, 255, 255) 0px 0px 0px 0px, rgb(251, 146, 60) 0px 0px 0px 2px, rgba(0, 0, 0, 0) 0px 0px 0px 0px'
-        }} className="text-center p-8 border rounded-xl transition-all transform scale-105 bg-gray-200">
-            <h3 className="font-serif text-2xl lg:text-3xl font-medium mb-4" style={{
-            color: 'rgba(122, 134, 106, 1)'
-          }}>
+          <div className="bg-card border-2 border-primary text-center p-8 rounded-xl transition-all transform scale-105 shadow-lg">
+            <h3 className="font-serif text-2xl lg:text-3xl font-medium mb-4 text-primary">
               Shared Haven
             </h3>
-            <div className="text-5xl font-bold text-accent-orange mb-6">
+            <div className="text-5xl font-bold text-primary mb-6">
               $500<span className="text-xl text-muted-foreground font-normal">/month</span>
             </div>
             <ul className="space-y-3 text-left">
               {["Share room with one other student", "2 twin beds provided", "2 room layout variations available", "Shared common areas & bathrooms", "All utilities included", "High-speed WiFi", "EOS Gym membership", "Fully furnished", "Prime location near SEU"].map((feature, index) => <li key={index} className="flex items-center text-muted-foreground">
-                  <span className="text-green-500 font-bold mr-3">✓</span>
+                  <span className="text-primary font-bold mr-3">✓</span>
                   {feature}
                 </li>)}
             </ul>

@@ -39,9 +39,9 @@ export const Amenities = () => {
   ];
 
   return (
-    <section id="amenities" className="verde-section" style={{ backgroundColor: 'rgba(218, 217, 211, 1)' }}>
+    <section id="amenities" className="verde-section bg-muted">
       <div className="verde-container">
-        <h2 className="font-serif text-4xl lg:text-5xl font-medium text-center mb-6 tracking-tight" style={{ color: 'rgba(122, 134, 106, 1)' }}>
+        <h2 className="font-serif text-4xl lg:text-5xl font-medium text-center mb-6 tracking-tight text-primary">
           Thoughtful Amenities
         </h2>
         <p className="font-sans text-lg text-center text-muted-foreground mb-12 font-light">
@@ -52,7 +52,7 @@ export const Amenities = () => {
           {amenities.map((amenity, index) => (
             <div key={index} className="verde-amenity-card">
               <div className="text-5xl mb-4">{amenity.icon}</div>
-              <h3 className="font-serif text-xl font-medium mb-3" style={{ color: 'rgba(122, 134, 106, 1)' }}>
+              <h3 className="font-serif text-xl font-medium mb-3 text-primary">
                 {amenity.title}
               </h3>
               <p className="font-sans text-muted-foreground leading-relaxed font-light">
